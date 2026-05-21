@@ -23,7 +23,7 @@ export default function Home() {
       <footer className="py-8 border-t border-border bg-card">
         <div className="container mx-auto px-6 text-center text-muted-foreground flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="font-mono text-sm">
-            <span className="text-primary">&lt;</span>Dev
+            <span className="text-primary">&lt;</span>Akrosh
             <span className="text-primary">/&gt;</span>
           </div>
           <p className="text-sm">

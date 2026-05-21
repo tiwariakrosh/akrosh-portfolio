@@ -23,7 +23,7 @@ export function Navbar() {
 
       // Simple intersection observer alternative for active section
       const sections = NAV_ITEMS.map((item) => item.href.substring(1));
-      
+
       let current = "";
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -35,7 +35,7 @@ export function Navbar() {
           }
         }
       }
-      
+
       if (current !== activeSection) {
         setActiveSection(current);
       }
@@ -63,13 +63,16 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a 
-          href="#hero" 
-          onClick={(e) => { e.preventDefault(); scrollTo("#hero"); }}
+        <a
+          href="#hero"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollTo("#hero");
+          }}
           className="text-xl font-bold font-mono tracking-tighter"
         >
           <span className="text-primary">&lt;</span>
-          Dev
+          Akrosh
           <span className="text-primary">/&gt;</span>
         </a>
 

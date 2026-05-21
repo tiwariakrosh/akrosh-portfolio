@@ -8,8 +8,16 @@ const projects = [
     title: "AakashTel",
     description:
       "An automated telephony solution with features like automated phone calls, versatile applications, political campaigns, easy CRM integration, a centralized phone number, stored call recordings, and automatic call routing.",
-    image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=2070&auto=format&fit=crop",
-    tags: ["Next.js", "TypeScript", "Shadcn/ui", "Zustand", "React Query", "NextAuth"],
+    image:
+      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=2070&auto=format&fit=crop",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Shadcn/ui",
+      "Zustand",
+      "React Query",
+      "NextAuth",
+    ],
     github: "https://github.com/akroshtiwari",
     demo: "https://aakashtel.com",
   },
@@ -17,28 +25,50 @@ const projects = [
     title: "SME Portal",
     description:
       "A centralized digital platform strengthening the SME ecosystem by connecting enterprises, service providers, and public stakeholders. Provides access to business resources, analytics, and collaboration tools for SMEs.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-    tags: ["Next.js", "TypeScript", "Shadcn/ui", "Redux Toolkit", "React Query", "NextAuth"],
-    github: "https://github.com/akroshtiwari",
-    demo: "https://smeportal.com.np",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Shadcn/ui",
+      "Redux Toolkit",
+      "React Query",
+      "NextAuth",
+    ],
+    github: "#",
+    demo: "https://udaya.koshi.gov.np/",
   },
   {
     title: "Shopo — Admin & Merchant Panel",
     description:
       "A merchant-only e-commerce platform supporting master product creation, product assignment to shops and branches, a messaging system, loyalty points program, RBAC (Role-Based Access Control), and Stripe payment integration.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Material UI", "Redux Toolkit"],
-    github: "https://github.com/akroshtiwari",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Material UI",
+      "Redux Toolkit",
+    ],
+    github: "#",
     demo: "#",
   },
   {
     title: "Thaili Digital Wallet",
     description:
       "A digital wallet launched by Nepal Investment Bank Ltd. (NIBL) for secure and seamless financial transactions. Implemented core features including fund transfers, transaction history, and state management.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop",
-    tags: ["React.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "RESTful APIs"],
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop",
+    tags: [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "RESTful APIs",
+    ],
     github: "https://github.com/akroshtiwari",
-    demo: "https://nibl.com.np/pages/digital-wallet",
+    demo: "https://thaili.com.np",
   },
 ];
 
@@ -48,14 +78,24 @@ export function Projects() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">Featured Work</h2>
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">Selected projects</h3>
+            <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
+              Featured Work
+            </h2>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              Selected projects
+            </h3>
             <p className="text-muted-foreground text-lg">
-              Real-world products built across fintech, SaaS, and enterprise platforms — each tackling complex UI and scale.
+              Real-world products built across fintech, SaaS, and enterprise
+              platforms — each tackling complex UI and scale.
             </p>
           </div>
           <Button variant="outline" className="shrink-0 w-fit" asChild>
-            <a href="https://github.com/akroshtiwari" target="_blank" rel="noopener noreferrer" data-testid="link-github-archive">
+            <a
+              href="https://github.com/akroshtiwari"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="link-github-archive"
+            >
               View GitHub
               <Github className="ml-2 w-4 h-4" />
             </a>
@@ -81,15 +121,34 @@ export function Projects() {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <Button size="sm" variant="secondary" className="rounded-full shadow-lg gap-2" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" data-testid={`link-github-${index}`}>
+                  <Button
+                    size="sm"
+                    variant="secondary"
+                    className="rounded-full shadow-lg gap-2"
+                    asChild
+                  >
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-testid={`link-github-${index}`}
+                    >
                       <Github className="w-4 h-4" />
                       Code
                     </a>
                   </Button>
                   {project.demo !== "#" && (
-                    <Button size="sm" className="rounded-full shadow-lg gap-2" asChild>
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer" data-testid={`link-demo-${index}`}>
+                    <Button
+                      size="sm"
+                      className="rounded-full shadow-lg gap-2"
+                      asChild
+                    >
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-testid={`link-demo-${index}`}
+                      >
                         <ExternalLink className="w-4 h-4" />
                         Visit
                       </a>
@@ -105,7 +164,7 @@ export function Projects() {
                     {project.title}
                   </h4>
                   <div className="flex items-center gap-2 shrink-0 pt-0.5">
-                    <a
+                    {/* <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -113,7 +172,7 @@ export function Projects() {
                       data-testid={`icon-github-${index}`}
                     >
                       <Github className="w-4 h-4" />
-                    </a>
+                    </a> */}
                     {project.demo !== "#" && (
                       <a
                         href={project.demo}
@@ -128,11 +187,17 @@ export function Projects() {
                   </div>
                 </div>
 
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">{project.description}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
+                  {project.description}
+                </p>
 
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="font-mono text-xs font-normal">
+                    <Badge
+                      key={tag}
+                      variant="secondary"
+                      className="font-mono text-xs font-normal"
+                    >
                       {tag}
                     </Badge>
                   ))}

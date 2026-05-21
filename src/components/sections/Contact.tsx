@@ -7,7 +7,6 @@ import emailjs from "@emailjs/browser";
 import {
   Github,
   Linkedin,
-  Twitter,
   Mail,
   Send,
   CheckCircle2,
@@ -53,6 +52,8 @@ export function Contact() {
     },
   });
 
+  console.log("form values", form.getValues());
+
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setFormState("sending");
     setErrorMessage("");
@@ -62,10 +63,9 @@ export function Contact() {
         SERVICE_ID,
         TEMPLATE_ID,
         {
-          from_name: values.name,
-          from_email: values.email,
+          name: values.name,
+          email: values.email,
           message: values.message,
-          reply_to: values.email,
         },
         { publicKey: PUBLIC_KEY },
       );
@@ -131,7 +131,7 @@ export function Contact() {
                   asChild
                 >
                   <a
-                    href="#"
+                    href="https://github.com/tiwariakrosh"
                     target="_blank"
                     rel="noreferrer"
                     data-testid="link-github"
@@ -146,27 +146,12 @@ export function Contact() {
                   asChild
                 >
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/akrosh-tiwari-9a1a42167/"
                     target="_blank"
                     rel="noreferrer"
                     data-testid="link-linkedin"
                   >
                     <Linkedin className="w-5 h-5" />
-                  </a>
-                </Button>
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="rounded-full w-12 h-12"
-                  asChild
-                >
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noreferrer"
-                    data-testid="link-twitter"
-                  >
-                    <Twitter className="w-5 h-5" />
                   </a>
                 </Button>
               </div>

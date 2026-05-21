@@ -241,4 +241,8 @@
   body {
     @apply font-sans antialiased bg-background text-foreground transition-colors duration-300;
   }
+
+  button {
+    cursor: pointer;
+  }
 }

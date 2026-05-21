@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { MapPin, Mail, Phone } from "lucide-react";
+import MyImage from "/assets/me-programmer.png";
 
 export function About() {
   return (
     <section id="about" className="py-24 relative">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
-
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -17,8 +17,8 @@ export function About() {
             <div className="aspect-square w-full max-w-md mx-auto relative rounded-3xl overflow-hidden group">
               <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-500" />
               <img
-                src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=2070&auto=format&fit=crop"
-                alt="Workspace"
+                src={MyImage}
+                alt="Profile Picture"
                 className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700"
               />
             </div>
@@ -34,19 +34,32 @@ export function About() {
             className="lg:w-1/2 flex flex-col gap-6"
           >
             <div>
-              <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">About Me</h2>
-              <h3 className="text-3xl md:text-4xl font-bold">Hi, I'm Akrosh Tiwari.</h3>
+              <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
+                About Me
+              </h2>
+              <h3 className="text-3xl md:text-4xl font-bold">
+                Hi, I'm Akrosh Tiwari.
+              </h3>
             </div>
 
             <div className="text-muted-foreground space-y-4 text-lg">
               <p>
-                A results-driven Front-End Developer with 4+ years of experience specializing in React.js, Next.js, and modern web technologies. I've built SaaS platforms, SME portals, digital wallet systems, e-commerce dashboards, telephony solutions, and reusable design systems.
+                A results-driven Front-End Developer with 4+ years of experience
+                specializing in React.js, Next.js, and modern web technologies.
+                I've built SaaS platforms, SME portals, digital wallet systems,
+                e-commerce dashboards, telephony solutions, and reusable design
+                systems.
               </p>
               <p>
-                I'm passionate about translating business requirements into clean, maintainable, and user-friendly interfaces — from pixel-perfect UI to robust CI/CD pipelines and monorepo architectures.
+                I'm passionate about translating business requirements into
+                clean, maintainable, and user-friendly interfaces — from
+                pixel-perfect UI to robust CI/CD pipelines and monorepo
+                architectures.
               </p>
               <p>
-                Beyond code, I care deeply about developer experience: enforcing strict standards, maintaining scalable codebases, and leaving every project better than I found it.
+                Beyond code, I care deeply about developer experience: enforcing
+                strict standards, maintaining scalable codebases, and leaving
+                every project better than I found it.
               </p>
             </div>
 
@@ -75,20 +88,31 @@ export function About() {
 
             <div className="grid grid-cols-3 gap-6 pt-6 border-t border-border mt-2">
               <div>
-                <span className="block text-4xl font-bold text-foreground">4+</span>
-                <span className="text-sm font-mono text-muted-foreground">Years Exp</span>
+                <span className="block text-4xl font-bold text-foreground">
+                  4+
+                </span>
+                <span className="text-sm font-mono text-muted-foreground">
+                  Years Exp
+                </span>
               </div>
               <div>
-                <span className="block text-4xl font-bold text-foreground">10+</span>
-                <span className="text-sm font-mono text-muted-foreground">Projects</span>
+                <span className="block text-4xl font-bold text-foreground">
+                  10+
+                </span>
+                <span className="text-sm font-mono text-muted-foreground">
+                  Projects
+                </span>
               </div>
               <div>
-                <span className="block text-4xl font-bold text-foreground">6</span>
-                <span className="text-sm font-mono text-muted-foreground">Companies</span>
+                <span className="block text-4xl font-bold text-foreground">
+                  6
+                </span>
+                <span className="text-sm font-mono text-muted-foreground">
+                  Companies
+                </span>
               </div>
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>
