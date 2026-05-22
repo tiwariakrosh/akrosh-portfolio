@@ -2,14 +2,16 @@ import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import aakashtelImg from "/assets/aakashtel.png";
+import smrPortalImg from "/assets/sme-portal.png";
+import thailiImg from "/assets/thaili.png";
 
 const projects = [
   {
     title: "AakashTel",
     description:
       "An automated telephony solution with features like automated phone calls, versatile applications, political campaigns, easy CRM integration, a centralized phone number, stored call recordings, and automatic call routing.",
-    image:
-      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=2070&auto=format&fit=crop",
+    image: aakashtelImg,
     tags: [
       "Next.js",
       "TypeScript",
@@ -18,15 +20,14 @@ const projects = [
       "React Query",
       "NextAuth",
     ],
-    github: "https://github.com/akroshtiwari",
+    // github: "#",
     demo: "https://aakashtel.com",
   },
   {
     title: "SME Portal",
     description:
       "A centralized digital platform strengthening the SME ecosystem by connecting enterprises, service providers, and public stakeholders. Provides access to business resources, analytics, and collaboration tools for SMEs.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+    image: smrPortalImg,
     tags: [
       "Next.js",
       "TypeScript",
@@ -35,7 +36,6 @@ const projects = [
       "React Query",
       "NextAuth",
     ],
-    github: "#",
     demo: "https://udaya.koshi.gov.np/",
   },
   {
@@ -51,15 +51,13 @@ const projects = [
       "Material UI",
       "Redux Toolkit",
     ],
-    github: "#",
     demo: "#",
   },
   {
     title: "Thaili Digital Wallet",
     description:
       "A digital wallet launched by Nepal Investment Bank Ltd. (NIBL) for secure and seamless financial transactions. Implemented core features including fund transfers, transaction history, and state management.",
-    image:
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop",
+    image: thailiImg,
     tags: [
       "React.js",
       "TypeScript",
@@ -67,7 +65,6 @@ const projects = [
       "Redux Toolkit",
       "RESTful APIs",
     ],
-    github: "https://github.com/akroshtiwari",
     demo: "https://thaili.com.np",
   },
 ];
@@ -91,7 +88,7 @@ export function Projects() {
           </div>
           <Button variant="outline" className="shrink-0 w-fit" asChild>
             <a
-              href="https://github.com/akroshtiwari"
+              href="https://github.com/tiwariakrosh"
               target="_blank"
               rel="noopener noreferrer"
               data-testid="link-github-archive"
@@ -120,8 +117,9 @@ export function Projects() {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <Button
+                {project.demo !== "#" && (
+                  <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                    {/* <Button
                     size="sm"
                     variant="secondary"
                     className="rounded-full shadow-lg gap-2"
@@ -136,8 +134,8 @@ export function Projects() {
                       <Github className="w-4 h-4" />
                       Code
                     </a>
-                  </Button>
-                  {project.demo !== "#" && (
+                  </Button> */}
+                    {/* {project.demo !== "#" && ( */}
                     <Button
                       size="sm"
                       className="rounded-full shadow-lg gap-2"
@@ -153,12 +151,12 @@ export function Projects() {
                         Visit
                       </a>
                     </Button>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
 
               {/* Content */}
-              <div className="p-8 flex flex-col flex-grow">
+              <div className="p-8 flex flex-col grow">
                 <div className="flex items-start justify-between gap-4 mb-3">
                   <h4 className="text-xl font-bold group-hover:text-primary transition-colors leading-snug">
                     {project.title}
@@ -187,7 +185,7 @@ export function Projects() {
                   </div>
                 </div>
 
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-grow">
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6 grow">
                   {project.description}
                 </p>
 

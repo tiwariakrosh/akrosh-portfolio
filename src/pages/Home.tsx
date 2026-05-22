@@ -27,7 +27,7 @@ export default function Home() {
             <span className="text-primary">/&gt;</span>
           </div>
           <p className="text-sm">
-            © {new Date().getFullYear()} Akrosh. Built with React & Tailwind.
+            © {new Date().getFullYear()} Akrosh Tiwari. All rights reserved.
           </p>
         </div>
       </footer>

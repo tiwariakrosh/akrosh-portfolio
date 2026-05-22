@@ -35,9 +35,9 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
         >
-          Crafting{" "}
-          <span className="text-primary italic font-serif">digital</span>
-          <br /> experiences
+          Where{" "}
+          <span className="text-primary italic font-serif">clean code</span>
+          <br /> meets great design
         </motion.h1>
 
         <motion.p
@@ -46,11 +46,9 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4"
         >
-          Hi, I'm{" "}
-          <span className="text-foreground font-semibold">Akrosh Tiwari</span> —
-          a Front-End Developer with 4+ years of experience building scalable,
-          responsive, and high-performance web applications using React.js,
-          Next.js, and TypeScript.
+          I help teams build fast, scalable, and beautiful web products.
+          Specializing in React, Next.js & TypeScript — 4+ years, 10+ projects
+          shipped
         </motion.p>
 
         <motion.div

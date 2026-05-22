@@ -6,19 +6,36 @@ const experiences = [
     role: "Front-End Developer (Freelance)",
     company: "Independent Contractor",
     type: "Freelance",
-    period: "Sept 2025 — Feb 2026",
+    period: "Sept 2025 — Present",
     description:
       "Developed a complete Inventory Management System for a local retail business — including product management, stock monitoring, sales reporting, role-based dashboards with real-time stock updates, and CSV export. Independently handled the full development lifecycle from requirement analysis to deployment.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/ui", "React Query", "Zustand"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn/ui",
+      "React Query",
+      "Zustand",
+    ],
   },
   {
     role: "Front-End Developer",
     company: "Youngminds Creation Pvt. Ltd.",
     type: "Full Time",
-    period: "Apr 2025 — Sept 2025",
+    period: "Apr 2025 — Present",
     description:
       "Led front-end development of the SME Portal, overseeing project execution, scalability, and delivery. Implemented CI/CD pipelines using GitHub Actions to automate testing, building, and deployment. Also contributed to the NHRC Research Portal, building responsive UIs with seamless API integration.",
-    tags: ["React.js", "Next.js", "TypeScript", "Shadcn/ui", "Mantine UI", "React Query", "GitHub Actions", "Jenkins", "Docker"],
+    tags: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Shadcn/ui",
+      "Mantine UI",
+      "React Query",
+      "GitHub Actions",
+      "Jenkins",
+      "Docker",
+    ],
   },
   {
     role: "Frontend Developer (Part Time)",
@@ -27,7 +44,15 @@ const experiences = [
     period: "Nov 2024 — Apr 2025",
     description:
       "Implemented Storybook testing to ensure consistent UI components. Built and maintained a design system with reusable UI components in Next.js for scalable development. Collaborated with stakeholders to analyze and implement requirements accurately.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/ui", "Zustand", "Storybook", "Jest"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn/ui",
+      "Zustand",
+      "Storybook",
+      "Jest",
+    ],
   },
   {
     role: "React.js Developer",
@@ -36,7 +61,16 @@ const experiences = [
     period: "Oct 2023 — Apr 2025",
     description:
       "Developed interactive user interfaces with ReactJS and NextJS. Built and maintained a monorepo project structure for efficient code management. Integrated multiple backend endpoints, ensured responsiveness, cross-browser compatibility, and optimized performance throughout.",
-    tags: ["Next.js", "React.js", "TypeScript", "Shadcn/ui", "Redux Toolkit", "Zustand", "MUI", "React Query"],
+    tags: [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Shadcn/ui",
+      "Redux Toolkit",
+      "Zustand",
+      "MUI",
+      "React Query",
+    ],
   },
   {
     role: "React.js Developer",
@@ -80,7 +114,9 @@ export function Experience() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">Career</h2>
+            <h2 className="text-sm font-mono text-primary tracking-wider uppercase mb-2">
+              Career
+            </h2>
             <h3 className="text-3xl md:text-4xl font-bold">Work Experience</h3>
           </div>
 
@@ -95,12 +131,14 @@ export function Experience() {
                 className="relative pl-8 md:pl-0"
                 data-testid={`exp-item-${index}`}
               >
-                <div className="absolute -left-[41px] md:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-background border-2 border-primary shadow-[0_0_0_4px_var(--color-background)]" />
+                <div className="absolute -left-[8px] md:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-background border-2 border-primary shadow-[0_0_0_4px_var(--color-background)]" />
 
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between mb-1 gap-2">
                   <h4 className="text-lg font-bold leading-snug">{exp.role}</h4>
                   <div className="flex items-center gap-2 shrink-0">
-                    <span className={`text-xs font-mono px-2 py-0.5 rounded-full border ${typeColors[exp.type]}`}>
+                    <span
+                      className={`text-xs font-mono px-2 py-0.5 rounded-full border ${typeColors[exp.type]}`}
+                    >
                       {exp.type}
                     </span>
                     <span className="text-xs font-mono text-muted-foreground px-3 py-1 bg-muted rounded-full whitespace-nowrap">
@@ -109,12 +147,20 @@ export function Experience() {
                   </div>
                 </div>
 
-                <div className="text-primary font-medium text-sm mb-3">{exp.company}</div>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">{exp.description}</p>
+                <div className="text-primary font-medium text-sm mb-3">
+                  {exp.company}
+                </div>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                  {exp.description}
+                </p>
 
                 <div className="flex flex-wrap gap-1.5">
                   {exp.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="font-mono text-xs font-normal">
+                    <Badge
+                      key={tag}
+                      variant="secondary"
+                      className="font-mono text-xs font-normal"
+                    >
                       {tag}
                     </Badge>
                   ))}
@@ -131,15 +177,21 @@ export function Experience() {
             transition={{ duration: 0.5 }}
             className="mt-16 pt-10 border-t border-border"
           >
-            <h4 className="text-sm font-mono text-primary tracking-wider uppercase mb-6">Education</h4>
+            <h4 className="text-sm font-mono text-primary tracking-wider uppercase mb-6">
+              Education
+            </h4>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div>
-                <p className="font-bold text-lg">B.Sc. in Computer Science and Information Technology (CSIT)</p>
-                <p className="text-muted-foreground text-sm mt-1">Tribhuvan University, Nepal</p>
+                <p className="font-bold text-lg">
+                  B.Sc. in Computer Science and Information Technology (CSIT)
+                </p>
+                <p className="text-muted-foreground text-sm mt-1">
+                  Tribhuvan University, Nepal
+                </p>
               </div>
-              <span className="text-xs font-mono text-muted-foreground px-3 py-1 bg-muted rounded-full w-fit shrink-0">
+              {/* <span className="text-xs font-mono text-muted-foreground px-3 py-1 bg-muted rounded-full w-fit shrink-0">
                 Nov 2015 — Jul 2020
-              </span>
+              </span> */}
             </div>
           </motion.div>
         </div>
