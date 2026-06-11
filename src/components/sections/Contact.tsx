@@ -146,7 +146,7 @@ export function Contact() {
                   asChild
                 >
                   <a
-                    href="https://www.linkedin.com/in/akrosh-tiwari-9a1a42167/"
+                    href="https://www.linkedin.com/in/akroshtiwari1/"
                     target="_blank"
                     rel="noreferrer"
                     data-testid="link-linkedin"
