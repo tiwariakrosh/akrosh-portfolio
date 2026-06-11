@@ -168,7 +168,7 @@ export function Contact() {
           >
             <div className="bg-card border border-border rounded-3xl p-8 md:p-10 shadow-sm">
               {formState === "success" ? (
-                <div className="h-full min-h-[400px] flex flex-col items-center justify-center text-center space-y-4 animate-in fade-in zoom-in duration-500">
+                <div className="h-full min-h-100 flex flex-col items-center justify-center text-center space-y-4 animate-in fade-in zoom-in duration-500">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
